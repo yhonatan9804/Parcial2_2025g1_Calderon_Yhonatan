@@ -1007,3 +1007,36 @@ section.container.py-5 p.text-center {
 .team-socials a:hover {
   color: var(--color-primario);
 }
+
+
+
+/* ----------------------
+   Modales del Equipo
+-------------------------*/
+.team-modal {
+  border-radius: 15px;
+  background: #fff;
+  color: #333;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+}
+
+.team-modal .modal-header {
+  border-bottom: none;
+  background: var(--color-secundario);
+  color: var(--color-texto);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.team-modal .modal-title {
+  font-weight: 700;
+  color: var(--color-acento);
+}
+
+.team-modal .modal-body {
+  padding: 25px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
