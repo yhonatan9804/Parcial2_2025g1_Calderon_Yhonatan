@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoderHub.run - Inicio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+      <img src="./img/logo_3.png" alt="Logo" class="logo me-2">
+        CoderHub.run
+      </a>
+
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <nav class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link active">Inicio</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">Nosotros</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero d-flex align-items-center text-center text-white">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Innovamos en tecnología</h1>
+      <p class="lead">Desarrollo de software confiable y a la medida</p>
+      <a href="contact.html" class="btn btn-primary btn-lg mt-3">Contáctanos</a>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+<section class="py-5">
+  <div class="container text-center">
+    <h2 class="mb-4">Nuestros Servicios</h2>
+    <div class="row g-4 justify-content-center rpg-cards">
+
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="rpg-card">
+          <div class="rpg-card-image">
+            <img src="./img/web_1.png" alt="Desarrollo Web" />
+          </div>
+          <a href="#" class="rpg-card-content">
+            <h5>Desarrollo Web</h5>
+            <p>Sitios modernos y responsivos, optimización SEO y diseño personalizado.</p>
+            <div class="rpg-card-stats">
+              <ul>
+                <li><strong>Moderno</strong></li>
+                <li><strong>SEO</strong></li>
+                <li><strong>Personalizado</strong></li>
+              </ul>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="rpg-card">
+          <div class="rpg-card-image">
+            <img src="./img/app_moviles.png" alt="Apps Móviles" />
+          </div>
+          <a href="#" class="rpg-card-content">
+            <h5>Apps Móviles</h5>
+            <p>Android e iOS, interfaces intuitivas y APIs integradas.</p>
+            <div class="rpg-card-stats">
+              <ul>
+                <li><strong>Android/iOS</strong></li>
+                <li><strong>Intuitivas</strong></li>
+                <li><strong>APIs</strong></li>
+              </ul>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="rpg-card">
+          <div class="rpg-card-image">
+            <img src="./img/consultoria.png" alt="Consultoría" />
+          </div>
+          <a href="#" class="rpg-card-content">
+            <h5>Consultoría</h5>
+            <p>Estrategias tecnológicas, análisis y optimización de procesos.</p>
+            <div class="rpg-card-stats">
+              <ul>
+                <li><strong>Estrategias</strong></li>
+                <li><strong>Análisis</strong></li>
+                <li><strong>Optimización</strong></li>
+              </ul>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="rpg-card">
+          <div class="rpg-card-image">
+            <img src="./img/cuatro.png" alt="Soporte" />
+          </div>
+          <a href="#" class="rpg-card-content">
+            <h5>Soporte</h5>
+            <p>Mantenimiento continuo, soporte 24/7 y resolución rápida.</p>
+            <div class="rpg-card-stats">
+              <ul>
+                <li><strong>Mantenimiento</strong></li>
+                <li><strong>24/7</strong></li>
+                <li><strong>Rápida</strong></li>
+              </ul>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PORTAFOLIO -->
+<section class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="mb-5">Portafolio</h2>
+    <div class="row g-4">
+      
+      <!-- Proyecto 1 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card portfolio-card shadow-sm border-0 rounded hover-zoom" data-bs-toggle="modal" data-bs-target="#modalProyecto1" style="cursor:pointer;">
+          <img src="./img/proyecto_1.png" class="card-img-top" alt="Proyecto 1" />
+          <div class="overlay d-flex flex-column justify-content-center align-items-center text-center px-3">
+            <h5 class="text-white mb-2">Proyecto Web</h5>
+            <p class="text-white-50 small">Sitio corporativo responsivo para empresa ficticia.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Proyecto 1 -->
+      <div class="modal fade" id="modalProyecto1" tabindex="-1" aria-labelledby="tituloModal1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="tituloModal1">Proyecto Web</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+              <img src="./img/proyecto_1.png" class="img-fluid mb-3" alt="Proyecto 1" />
+              <p>Este proyecto web incluye diseño responsivo y adaptativo que garantiza una experiencia coherente en dispositivos móviles y escritorio. Se implementaron funciones avanzadas de SEO para mejorar la visibilidad en motores de búsqueda y un panel de administración para facilitar la gestión de contenido.</p>
+              <p><strong>Tecnologías usadas:</strong> HTML5, CSS3, JavaScript, Bootstrap 5, PHP, MySQL.</p>
+              <p><strong>Resultados:</strong> Incremento del 30% en tráfico web en los primeros 3 meses y mejor tasa de conversión.</p>
+              <a href="#" class="btn btn-primary">Ver proyecto</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyecto 2 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card portfolio-card shadow-sm border-0 rounded hover-zoom" data-bs-toggle="modal" data-bs-target="#modalProyecto2" style="cursor:pointer;">
+          <img src="./img/proyecto_2.png" class="card-img-top" alt="Proyecto 2" />
+          <div class="overlay d-flex flex-column justify-content-center align-items-center text-center px-3">
+            <h5 class="text-white mb-2">App Móvil</h5>
+            <p class="text-white-50 small">Aplicación de gestión personal para Android/iOS.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Proyecto 2 -->
+      <div class="modal fade" id="modalProyecto2" tabindex="-1" aria-labelledby="tituloModal2" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="tituloModal2">App Móvil</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+              <img src="./img/proyecto_2.png" class="img-fluid mb-3" alt="Proyecto 2" />
+              <p>Aplicación móvil desarrollada para mejorar la productividad personal con funciones personalizadas como listas de tareas, recordatorios y análisis de hábitos. El diseño UI/UX está pensado para ser intuitivo y eficiente, compatible con Android e iOS.</p>
+              <p><strong>Tecnologías usadas:</strong> Flutter, Dart, Firebase, APIs REST.</p>
+              <p><strong>Resultados:</strong> Más de 10,000 descargas con alta calificación promedio en tiendas.</p>
+              <a href="#" class="btn btn-primary">Ver proyecto</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyecto 3 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card portfolio-card shadow-sm border-0 rounded hover-zoom" data-bs-toggle="modal" data-bs-target="#modalProyecto3" style="cursor:pointer;">
+          <img src="img/proyecto_3.png" class="card-img-top" alt="Proyecto 3" />
+          <div class="overlay d-flex flex-column justify-content-center align-items-center text-center px-3">
+            <h5 class="text-white mb-2">Consultoría TI</h5>
+            <p class="text-white-50 small">Asesoría en infraestructura de servidores.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Proyecto 3 -->
+      <div class="modal fade" id="modalProyecto3" tabindex="-1" aria-labelledby="tituloModal3" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="tituloModal3">Consultoría TI</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/proyecto_3.png" class="img-fluid mb-3" alt="Proyecto 3" />
+              <p>Consultoría para optimización y evaluación de infraestructura tecnológica, incluyendo análisis de servidores, redes y seguridad informática para garantizar la continuidad operativa y eficiencia del negocio.</p>
+              <p><strong>Tecnologías usadas:</strong> Análisis de tráfico, virtualización, soluciones cloud.</p>
+              <p><strong>Resultados:</strong> Reducción de costos y mejora en tiempos de respuesta.</p>
+              <a href="#" class="btn btn-primary">Ver proyecto</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyecto 4 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card portfolio-card shadow-sm border-0 rounded hover-zoom" data-bs-toggle="modal" data-bs-target="#modalProyecto4" style="cursor:pointer;">
+          <img src="img/proyecto_4.png" class="card-img-top" alt="Proyecto 4" />
+          <div class="overlay d-flex flex-column justify-content-center align-items-center text-center px-3">
+            <h5 class="text-white mb-2">Soporte Técnico</h5>
+            <p class="text-white-50 small">Servicio de mantenimiento remoto 24/7.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Proyecto 4 -->
+      <div class="modal fade" id="modalProyecto4" tabindex="-1" aria-labelledby="tituloModal4" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="tituloModal4">Soporte Técnico</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/proyecto_4.png" class="img-fluid mb-3" alt="Proyecto 4" />
+              <p>Servicio especializado de soporte técnico remoto disponible 24/7 para garantizar la operatividad y resolución rápida de incidentes de TI, incluyendo mantenimiento preventivo y correctivo.</p>
+              <p><strong>Tecnologías usadas:</strong> Herramientas de monitoreo remoto y ticketing.</p>
+              <p><strong>Resultados:</strong> Alta satisfacción del cliente y tiempos de resolución óptimos.</p>
+              <a href="#" class="btn btn-primary">Ver proyecto</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 CoderHub.run | contacto@coderhub.run</p>
+    <a href="#" class="text-white me-2">Facebook</a> |
+    <a href="#" class="text-white ms-2">LinkedIn</a>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
