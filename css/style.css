@@ -1,5 +1,5 @@
 /* ----------------------
-   Variables de color
+   VARIABLES DE COLOR
 -------------------------*/
 :root {
   --color-primario: #0d6efd;   /* Azul Bootstrap */
@@ -9,7 +9,7 @@
 }
 
 /* ----------------------
-   General
+   GENERAL
 -------------------------*/
 body {
   padding-top: 70px;
@@ -20,10 +20,9 @@ body {
 
 /* Logo en el navbar */
 .logo {
-  height: 40px;     /* ajusta el tamaño */
+  height: 40px;     
   width: auto;
 }
-
 
 /* Links generales */
 a {
@@ -35,7 +34,7 @@ a:hover {
 }
 
 /* ----------------------
-   Header y Navbar
+   HEADER Y NAVBAR
 -------------------------*/
 header {
   background: var(--color-secundario);
@@ -54,7 +53,7 @@ header {
 }
 
 /* ----------------------
-   Hero
+   HERO / SECCIÓN PRINCIPAL
 -------------------------*/
 .hero {
   background: linear-gradient(rgba(10, 25, 49, 0.75), rgba(10, 25, 49, 0.75)),
@@ -66,7 +65,6 @@ header {
   text-align: center;
   padding: 0 15px;
 }
-
 
 .hero h1 {
   font-size: 3rem;
@@ -91,16 +89,15 @@ header {
 }
 
 /* ----------------------
-   Secciones
+   SECCIONES Y TÍTULOS
 -------------------------*/
 section h2 {
   font-weight: 700;
   margin-bottom: 25px;
   text-align: center;
   display: block;
-  color: var(--color-acento); /* ahora usa tu celeste elegante */
+  color: var(--color-acento);
 }
-
 section h2::after {
   content: '';
   display: block;
@@ -111,10 +108,16 @@ section h2::after {
   border-radius: 2px;
 }
 
+.bg-dark h2, 
+.bg-dark h4, 
+.bg-dark p {
+  color: var(--color-texto) !important;
+}
 
 /* ----------------------
-   Servicios y Tarjetas
+   TARJETAS / PORTAFOLIO / EQUIPO / ESENCIA
 -------------------------*/
+/* Tarjetas generales */
 .card {
   border: none;
   border-radius: 15px;
@@ -129,543 +132,7 @@ section h2::after {
   font-weight: 600;
 }
 
-/* ----------------------
-   Formulario
--------------------------*/
-form .form-control {
-  border-radius: 10px;
-  border: 1px solid #ccc;
-  padding: 12px;
-  transition: border 0.3s;
-}
-form .form-control:focus {
-  border-color: var(--color-primario);
-  box-shadow: 0 0 8px rgba(13,110,253,0.3);
-}
-
-/* Botón */
-form button {
-  background: var(--color-primario);
-  border: none;
-  border-radius: 30px;
-  padding: 12px 30px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-}
-form button:hover {
-  background: var(--color-acento);
-  transform: scale(1.05);
-}
-
-/* ----------------------
-   Footer
--------------------------*/
-footer {
-  background: var(--color-secundario);
-  color: var(--color-texto);
-  font-size: 0.9rem;
-}
-footer a {
-  color: var(--color-acento);
-}
-footer a:hover {
-  text-decoration: underline;
-}
-
-/* ----------------------
-   Animaciones
--------------------------*/
-@keyframes fadeInDown {
-  from { opacity: 0; transform: translateY(-50px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(50px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-
-/* ----------------------
-   Portafolio
--------------------------*/
-.portfolio-card {
-  position: relative;
-  overflow: hidden;
-  border-radius: 15px;
-  cursor: pointer;
-  transition: transform 0.4s ease;
-}
-.portfolio-card img {
-  width: 100%;
-  height: auto;
-  display: block;
-  transition: transform 0.5s ease;
-}
-.portfolio-card:hover img {
-  transform: scale(1.1);
-}
-
-.portfolio-card .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(10, 25, 49, 0.8);
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.4s ease;
-  text-align: center;
-  padding: 20px;
-}
-.portfolio-card:hover .overlay {
-  opacity: 1;
-}
-
-.portfolio-card .overlay h5 {
-  font-weight: 700;
-  margin-bottom: 10px;
-  color: var(--color-acento);
-}
-
-.bg-dark h2, 
-.bg-dark h4, 
-.bg-dark p {
-  color: var(--color-texto) !important; /* Blanco suave */
-}
-
-
-/* Iconos de misión/visión/valores */
-.icon {
-  font-size: 3rem;
-  color: var(--color-acento);
-}
-
-/* Animaciones suaves */
-.animate {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.8s ease-out;
-}
-.animate.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* ----------------------
-   Misión, Visión y Valores
--------------------------*/
-.esencia-card {
-  background: #fff;
-  border-radius: 15px;
-  padding: 30px 20px;
-  text-align: center;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-.esencia-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
-}
-
-/* Imagen/Icono dentro de la tarjeta */
-.esencia-card img {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 15px;
-  object-fit: contain;
-}
-.esencia-card h4 {
-  color: var(--color-secundario);
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-.esencia-card p {
-  color: #555;
-}
-/* ----------------------
-   Tarjetas de Esencia con colores
--------------------------*/
-.esencia-card {
-  border-radius: 15px;
-  padding: 30px 20px;
-  text-align: center;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  color: #fff; /* texto blanco por defecto */
-}
-
-.esencia-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
-}
-
-.esencia-card img {
-  width: 120px;   /* antes 80px */
-  height: 120px;  /* antes 80px */
-  margin-bottom: 20px;
-  object-fit: contain;
-  transition: transform 0.3s ease-in-out;
-}
-
-.esencia-card img:hover {
-  transform: scale(1.1); /* efecto suave al pasar el mouse */
-}
-
-/* Variantes de color */
-.bg-mision {
-  background: linear-gradient(135deg, #6fed61, #63b7e3); /* Azul */
-}
-.bg-vision {
-  background: linear-gradient(135deg, #a25bed, #6c99e7); /* Morado/Azul */
-}
-.bg-valores {
-  background: linear-gradient(135deg, #06beb6, #48b1bf); /* Verde/Aqua */
-}
-/* ----------------------
-   Tarjetas del Equipo con fotos grandes y fondo glass + degradado
--------------------------*/
-.team-card {
-  border-radius: 20px;
-  padding: 40px 20px;
-  color: #fff;
-  background: rgba(255, 255, 255, 0.08); /* transparencia base */
-  backdrop-filter: blur(10px); /* efecto vidrio */
-  -webkit-backdrop-filter: blur(10px); /* Safari */
-  transition: all 0.3s ease;
-}
-.team-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
-}
-
-/* Imagen circular más grande */
-.team-img img {
-  width: 160px;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 5px solid #f73838;
-  margin-bottom: 20px;
-  transition: transform 0.3s ease;
-}
-.team-card:hover .team-img img {
-  transform: scale(1.1);
-}
-
-/* Nombre y rol */
-.team-name {
-  font-weight: 700;
-  font-size: 1.4rem;
-}
-.team-role {
-  font-weight: 500;
-  font-size: 1rem;
-  opacity: 0.9;
-  margin-bottom: 12px;
-}
-.team-text {
-  font-size: 1rem;
-  opacity: 0.85;
-  margin-bottom: 20px;
-}
-
-/* Redes sociales */
-.team-socials a {
-  margin: 0 10px;
-  font-size: 1.4rem;
-  color: #ee5e5e;
-  transition: color 0.3s ease;
-}
-.team-socials a:hover {
-  color: var(--color-acento);
-}
-
-/* Variantes con degradado */
-.bg-equipo1 {
-  background: linear-gradient(135deg, rgba(115, 163, 235, 0.85), rgba(142, 177, 236, 0.85));
-}
-.bg-equipo2 {
-  background: linear-gradient(135deg, rgba(168, 96, 245, 0.85), rgba(174, 197, 236, 0.85));
-}
-.bg-equipo3 {
-  background: linear-gradient(135deg, rgba(241, 90, 90, 0.85), rgba(252, 138, 155, 0.85));
-}
-
-/* ----------------------
-   Contacto
--------------------------*/
-.contact-section {
-  background: linear-gradient(rgba(10, 25, 49, 0.85), rgba(10, 25, 49, 0.85)),
-              url('../img/contacto.png') center/cover no-repeat;
-  min-height: 100vh;
-  color: #fff;
-  padding: 80px 20px;
-}
-
-
-
-.contact-form {
-  background: rgba(255, 255, 255, 0.95);
-  border-radius: 15px;
-}
-
-.contact-form .form-control {
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  padding: 12px;
-  transition: all 0.3s ease;
-}
-.contact-form .form-control:focus {
-  border-color: var(--color-primario);
-  box-shadow: 0 0 8px rgba(13, 110, 253, 0.3);
-}
-
-.contact-form button {
-  border-radius: 30px;
-  font-size: 1rem;
-  transition: transform 0.3s ease;
-}
-.contact-form button:hover {
-  transform: translateY(-3px);
-}
-.custom-card {
-  border-radius: 15px;
-  background-clip: padding-box;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: none;
-  color: var(--color-texto);
-  padding-bottom: 1rem;
-}
-
-.custom-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
-}
-
-/* Fondos degradados que armonizan con paleta definida */
-.custom-card.basic {
-  background: linear-gradient(135deg, #7f7fd5, #86a8e7, #91eae4);
-}
-
-.custom-card.standard {
-  background: linear-gradient(135deg, #ff758c, #ff7eb3, #ffb88c);
-}
-
-.custom-card.premium {
-  background: linear-gradient(135deg, #6a11cb, #2575fc);
-}
-
-.custom-card.extra {
-  background: linear-gradient(135deg, #ffb347, #ffcc33);
-}
-
-/* Títulos */
-.custom-card .card-title {
-  color: var(--color-texto);
-  font-weight: 700;
-  margin-top: 1rem;
-}
-
-/* Listas */
-.custom-card ul {
-  color: var(--color-texto);
-  font-weight: 500;
-  padding-left: 0;
-  margin-top: 1rem;
-  margin-bottom: 0;
-  text-align: left;
-  list-style: none;
-}
-
-.custom-card ul li {
-  margin-bottom: 0.75rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.95rem;
-}
-
-/* Íconos de check */
-.custom-card ul li i {
-  color: #28a745; /* verde */
-  min-width: 20px;
-}
-
-/* Imagen iconos centrados */
-.card-img-top {
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
-}
-
-.imagen-grande {
-  width: 140px;
-  height: 140px;
-  object-fit: contain;
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
-}
-/*xfgbnbc */
-/* Agrandar imagen */
-.rpg-card-image {
-  width: 180px; /* aumentado de 140px */
-  height: 180px; /* aumentado de 140px */
-  margin-bottom: 25px; /* un poco más de espacio abajo */
-  border-radius: 50%;
-  overflow: hidden;
-  border: 4px solid #00b4d8;
-  background: #14213d;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  pointer-events: none; /* La imagen no recibe eventos de mouse, para que no interfiera */
-}
-
-.rpg-card-image img {
-  margin: auto;
-  display: block;
-  width: 90%; /* un poco menos que 100% para que no choque con el borde */
-  height: 90%;
-  object-fit: contain;
-  filter: drop-shadow(0 0 6px #00b4d8);
-  user-select: none;
-  pointer-events: none;
-}
-
-/* Solo el contenido es clickable */
-.rpg-card-content {
-  display: block;
-  color: #ccc;
-  text-decoration: none;
-  max-width: 90%;
-  margin: 0 auto;
-  padding: 0 10px;
-  border-radius: 15px;
-  transition: background-color 0.3s ease;
-}
-
-.rpg-card-content:hover,
-.rpg-card-content:focus {
-  background-color: rgba(0, 180, 216, 0.15);
-  color: #00b4d8;
-  outline: none;
-}
-
-/* Texto */
-.rpg-card-content h5 {
-  color: #00b4d8;
-  font-weight: 700;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-}
-
-.rpg-card-content p {
-  font-size: 0.9rem;
-  margin-bottom: 20px;
-  color: #a0a8c0;
-  line-height: 1.3;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-}
-
-/* Estadísticas */
-.rpg-card-stats ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  display: flex;
-  gap: 12px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.rpg-card-stats ul li {
-  background: #14213d;
-  padding: 5px 12px;
-  border-radius: 15px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: #00b4d8;
-  box-shadow: 0 0 10px #00b4d8;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  white-space: nowrap;
-}
-
-/* Evitar que el hover agrande toda la tarjeta, solo el texto */
-.rpg-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8);
-}
-
-/* El enlace no afecta la sombra ni transformación del padre */
-.rpg-card-content:hover {
-  box-shadow: none;
-  transform: none;
-}
-.rpg-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-
-
-
-/* Efecto zoom y sombra en las tarjetas */
-.hover-zoom:hover {
-  transform: scale(1.05);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
-  transition: all 0.4s ease;
-}
-
-/* Overlay para detalles en la imagen, con fondo semi-transparente */
-.portfolio-card {
-  position: relative;
-  overflow: hidden;
-}
-
-.portfolio-card .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(10, 25, 49, 0.6); /* tono oscuro semi-transparente */
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  padding: 15px;
-}
-
-.portfolio-card:hover .overlay {
-  opacity: 1;
-}
-
-/* Mejora en el hover general de la tarjeta */
-.portfolio-card {
-  transition: all 0.3s ease;
-  border-radius: 10px;
-}
-
-/* Opcional: Ajuste en las sombras y border-radius para elegancia */
-
-
-
-
-/* Efecto zoom y sombra suave en tarjetas de portafolio */
-.hover-zoom:hover {
-  transform: scale(1.05);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
-  transition: all 0.4s ease;
-}
-
-/* Contenedor principal de tarjeta portafolio */
+/* Portafolio */
 .portfolio-card {
   position: relative;
   overflow: hidden;
@@ -673,28 +140,19 @@ footer a:hover {
   cursor: pointer;
   transition: transform 0.4s ease, box-shadow 0.3s ease;
 }
-
-/* Imagen dentro de la tarjeta */
 .portfolio-card img {
   width: 100%;
   height: auto;
   display: block;
   transition: transform 0.5s ease;
-  border-radius: 15px 15px 0 0; /* borderedondeado solo arriba para imagen */
+  border-radius: 15px 15px 0 0;
 }
-
-/* Zoom imagen al hover para efecto llamativo */
 .portfolio-card:hover img {
   transform: scale(1.1);
 }
-
-/* Capa overlay con fondo oscuro semi-transparente - para texto descriptivo */
 .portfolio-card .overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: 0; left: 0; right: 0; bottom: 0;
   background: rgba(10, 25, 49, 0.6);
   color: #fff;
   display: flex;
@@ -707,107 +165,80 @@ footer a:hover {
   transition: opacity 0.3s ease;
   border-radius: 15px;
 }
-
-/* Mostrar overlay al hover */
 .portfolio-card:hover .overlay {
   opacity: 1;
 }
 
-/* Estilos modales (Bootstrap) */
-.modal-content img {
-  border-radius: 8px;
-  max-height: 400px;
-  object-fit: cover;
-  margin-bottom: 15px;
+/* Tarjetas RPG */
+.rpg-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-/* Botón dentro del modal */
-.modal-content .btn-primary {
-  background-color: var(--color-primario);
-  border-color: var(--color-primario);
+.rpg-card-image {
+  width: 180px; height: 180px;
+  margin-bottom: 25px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #00b4d8;
+  background: #14213d;
+  display: flex; justify-content: center; align-items: center;
+  pointer-events: none;
+}
+.rpg-card-image img {
+  margin: auto;
+  display: block;
+  width: 90%; height: 90%;
+  object-fit: contain;
+  filter: drop-shadow(0 0 6px #00b4d8);
+  user-select: none;
+  pointer-events: none;
+}
+.rpg-card-content {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 10px;
+  border-radius: 15px;
   transition: background-color 0.3s ease;
 }
-
-.modal-content .btn-primary:hover {
-  background-color: var(--color-acento);
-  border-color: var(--color-acento);
+.rpg-card-content:hover,
+.rpg-card-content:focus {
+  background-color: rgba(0, 180, 216, 0.15);
+  color: #00b4d8;
+  outline: none;
 }
+.rpg-card-content h5 { color: #00b4d8; font-weight: 700; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1.5px;}
+.rpg-card-content p { font-size: 0.9rem; margin-bottom: 20px; color: #a0a8c0; line-height: 1.3; overflow-wrap: break-word; }
+.rpg-card-stats ul { list-style: none; padding: 0; margin: 0 auto; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;}
+.rpg-card-stats ul li { background: #14213d; padding: 5px 12px; border-radius: 15px; font-size: 0.8rem; font-weight: 600; color: #00b4d8; box-shadow: 0 0 10px #00b4d8; text-transform: uppercase; letter-spacing: 1px; white-space: nowrap;}
+.rpg-card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8);}
+.rpg-card-content:hover { box-shadow: none; transform: none; }
 
-
-
-
-
-
-/* Contenedor general de la sección about */
-.container.py-5 {
-  max-width: 1100px;
-  margin: auto;
-}
-
-/* Título de la sección */
-h2.text-center {
-  font-weight: 800;
-  letter-spacing: 2px;
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-  color: var(--color-primario);
-  text-transform: uppercase;
-}
-
-/* Texto de historia */
-section.container.py-5 p.text-center {
-  font-size: 1.15rem;
-  color: #555;
-  max-width: 700px;
-  margin: 0 auto 3rem auto;
-  line-height: 1.6;
-  font-weight: 400;
-  font-family: 'Poppins', sans-serif;
-}
-
-/* Estilos para las tarjetas de Misión, Visión y Valores */
+/* Esencia */
 .esencia-card {
-  background: white;
   border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  padding: 2.5rem 1.8rem;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-  color: var(--color-secundario);
+  padding: 30px 20px;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  color: #fff;
 }
+.esencia-card img { width: 160px; height: 160px; margin-bottom: 30px; border-radius: 50%; border: 5px solid rgba(255,255,255,0.5); object-fit: cover; transition: transform 0.4s ease; }
+.esencia-card:hover img { transform: scale(1.12); }
+.esencia-card.animate { opacity: 1; transform: translateY(0); }
+.esencia-card.delay-1 { transition-delay: 0.2s; }
+.esencia-card.delay-2 { transition-delay: 0.4s; }
+.esencia-card.delay-3 { transition-delay: 0.6s; }
 
-.esencia-card:hover {
-  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
-  transform: translateY(-10px);
-}
+.bg-mision { background: linear-gradient(135deg, #6fed61, #39c24e); color: #fff; }
+.bg-vision { background: linear-gradient(135deg, #a25bed, #d553fa); color: #fff; }
+.bg-valores { background: linear-gradient(135deg, #06beb6, #1bf0e9); color: #fff; }
 
-.esencia-card img {
-  width: 100px;
-  height: 100px;
-  margin-bottom: 1.5rem;
-  object-fit: contain;
-}
-
-/* Mismo estilo para los títulos */
-.esencia-card h4 {
-  font-weight: 700;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  letter-spacing: 1px;
-}
-
-/* Texto contenido */
-.esencia-card p {
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #444;
-}
-
-/* Tarjetas del equipo */
+/* Equipo */
 .team-card {
-  background: rgba(255, 255, 255, 0.12);
   border-radius: 20px;
   padding: 3rem 2rem 2rem;
   color: var(--color-secundario);
@@ -815,203 +246,73 @@ section.container.py-5 p.text-center {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
   font-family: 'Poppins', sans-serif;
-}
-
-.team-card:hover {
-  box-shadow: 0 16px 50px rgba(0,0,0,0.25);
-  transform: translateY(-12px);
-}
-
-/* Imagen circular del equipo */
-.team-img img {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  border: 4px solid var(--color-acento);
-  margin-bottom: 1.5rem;
-  object-fit: cover;
-}
-
-/* Nombre */
-.team-name {
-  font-weight: 800;
-  font-size: 1.6rem;
-  margin-bottom: 0.5rem;
-  color: var(--color-primario);
-}
-
-/* Cargo */
-.team-role {
-  font-weight: 600;
-  font-size: 1rem;
-  opacity: 0.75;
-  margin-bottom: 1rem;
-}
-
-/* Descripción */
-.team-text {
-  font-size: 1rem;
-  color: #444;
-  opacity: 0.85;
-  margin-bottom: 1.5rem;
-}
-
-/* Redes sociales */
-.team-socials a {
-  margin: 0 0.8rem;
-  font-size: 1.3rem;
-  color: var(--color-acento);
-  transition: color 0.3s ease;
-}
-
-.team-socials a:hover {
-  color: var(--color-primario);
-}
-
-
-
-
-
-/* Colores vibrantes y degradados para tarjetas Esencia */
-.esencia-card.bg-mision {
-  background: linear-gradient(135deg, #6fed61, #39c24e);
-  color: #fff;
-}
-.esencia-card.bg-vision {
-  background: linear-gradient(135deg, #a25bed, #d553fa);
-  color: #fff;
-}
-.esencia-card.bg-valores {
-  background: linear-gradient(135deg, #06beb6, #1bf0e9);
-  color: #fff;
-}
-
-/* Tamaño muy grande para imagen esencia */
-.esencia-card img {
-  width: 160px;
-  height: 160px;
-  margin-bottom: 30px;
-  border-radius: 50%;
-  border: 5px solid rgba(255, 255, 255, 0.5);
-  object-fit: cover;
-  transition: transform 0.4s ease;
-}
-
-.esencia-card:hover img {
-  transform: scale(1.12);
-}
-
-/* Animaciones secuenciales con delay */
-.esencia-card {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.esencia-card.delay-1 {
-  transition-delay: 0.2s;
-}
-.esencia-card.delay-2 {
-  transition-delay: 0.4s;
-}
-.esencia-card.delay-3 {
-  transition-delay: 0.6s;
-}
-
-.esencia-card.animate {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Colores vibrantes para tarjetas de equipo */
-.team-card.bg-equipo1 {
-  background: linear-gradient(135deg, #7383e3, #4b54e3);
-}
-.team-card.bg-equipo2 {
-  background: linear-gradient(135deg, #a25bed, #d15def);
-}
-.team-card.bg-equipo3 {
-  background: linear-gradient(135deg, #ef5f5f, #fa7d7d);
-}
-
-/* Fotos mucho más grandes y bordes suaves */
-.team-img img {
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  border: 5px solid rgba(255, 255, 255, 0.7);
-  margin-bottom: 1.5rem;
-  object-fit: cover;
-  transition: transform 0.4s ease;
-}
-
-.team-card:hover .team-img img {
-  transform: scale(1.15);
-}
-
-/* Animaciones secuenciales para equipo */
-.team-card {
   opacity: 0;
   transform: translateY(40px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
 }
+.team-card.animate { opacity: 1; transform: translateY(0);}
+.team-card.delay-1 { transition-delay: 0.2s;}
+.team-card.delay-2 { transition-delay: 0.5s;}
+.team-card.delay-3 { transition-delay: 0.8s;}
+.team-card:hover { box-shadow: 0 16px 50px rgba(0,0,0,0.25); transform: translateY(-12px); }
 
-.team-card.delay-1 {
-  transition-delay: 0.2s;
-}
-.team-card.delay-2 {
-  transition-delay: 0.5s;
-}
-.team-card.delay-3 {
-  transition-delay: 0.8s;
-}
+.team-img img { width: 220px; height: 220px; border-radius: 50%; border: 5px solid rgba(255,255,255,0.7); margin-bottom: 1.5rem; object-fit: cover; transition: transform 0.4s ease; }
+.team-card:hover .team-img img { transform: scale(1.15); }
 
-.team-card.animate {
-  opacity: 1;
-  transform: translateY(0);
-}
+.team-name { font-weight: 800; font-size: 1.6rem; margin-bottom: 0.5rem; color: var(--color-primario);}
+.team-role { font-weight: 600; font-size: 1rem; opacity: 0.75; margin-bottom: 1rem; color: #fff;}
+.team-text { font-size: 1rem; color: #eaeaea; opacity: 0.85; margin-bottom: 1.5rem; }
+.team-socials a { margin: 0 0.8rem; font-size: 1.3rem; color: var(--color-acento); transition: color 0.3s ease;}
+.team-socials a:hover { color: var(--color-primario); }
 
-/* Nombres */
-.team-name {
-  font-weight: 800;
-  font-size: 1.6rem;
-  margin-bottom: 0.5rem;
-  color: var(--color-primario);
-}
-
-/* Roles */
-.team-role {
-  font-weight: 600;
-  font-size: 1rem;
-  opacity: 0.75;
-  margin-bottom: 1rem;
-  color: #fff;
-}
-
-/* Texto */
-.team-text {
-  font-size: 1rem;
-  color: #eaeaea;
-  opacity: 0.85;
-  margin-bottom: 1.5rem;
-}
-
-/* Redes sociales */
-.team-socials a {
-  margin: 0 0.8rem;
-  font-size: 1.3rem;
-  color: var(--color-acento);
-  transition: color 0.3s ease;
-}
-
-.team-socials a:hover {
-  color: var(--color-primario);
-}
-
-
+.bg-equipo1 { background: linear-gradient(135deg, #7383e3, #4b54e3);}
+.bg-equipo2 { background: linear-gradient(135deg, #a25bed, #d15def);}
+.bg-equipo3 { background: linear-gradient(135deg, #ef5f5f, #fa7d7d);}
 
 /* ----------------------
-   Modales del Equipo
+   FORMULARIOS Y BOTONES
+-------------------------*/
+form .form-control, .contact-form .form-control {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 12px;
+  transition: all 0.3s ease;
+}
+form .form-control:focus, .contact-form .form-control:focus {
+  border-color: var(--color-primario);
+  box-shadow: 0 0 8px rgba(13,110,253,0.3);
+}
+
+form button, .contact-form button {
+  background: var(--color-primario);
+  border: none;
+  border-radius: 30px;
+  padding: 12px 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+form button:hover, .contact-form button:hover {
+  background: var(--color-acento);
+  transform: scale(1.05);
+}
+
+/* ----------------------
+   CONTACTO
+-------------------------*/
+.contact-section {
+  background: linear-gradient(rgba(10, 25, 49, 0.85), rgba(10, 25, 49, 0.85)),
+              url('../img/contacto.png') center/cover no-repeat;
+  min-height: 100vh;
+  color: #fff;
+  padding: 80px 20px;
+}
+.contact-form {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+}
+
+/* ----------------------
+   MODALES
 -------------------------*/
 .team-modal {
   border-radius: 15px;
@@ -1019,7 +320,6 @@ section.container.py-5 p.text-center {
   color: #333;
   box-shadow: 0 15px 40px rgba(0,0,0,0.3);
 }
-
 .team-modal .modal-header {
   border-bottom: none;
   background: var(--color-secundario);
@@ -1027,16 +327,40 @@ section.container.py-5 p.text-center {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-
 .team-modal .modal-title {
   font-weight: 700;
   color: var(--color-acento);
 }
-
 .team-modal .modal-body {
   padding: 25px;
   font-size: 1rem;
   line-height: 1.6;
 }
+.modal-content img {
+  border-radius: 8px;
+  max-height: 400px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+.modal-content .btn-primary {
+  background-color: var(--color-primario);
+  border-color: var(--color-primario);
+  transition: background-color 0.3s ease;
+}
+.modal-content .btn-primary:hover {
+  background-color: var(--color-acento);
+  border-color: var(--color-acento);
+}
 
+/* ----------------------
+   ANIMACIONES
+-------------------------*/
+@keyframes fadeInDown { from { opacity: 0; transform: translateY(-50px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(50px); } to { opacity: 1; transform: translateY(0); } }
+.animate { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+.animate.visible { opacity: 1; transform: translateY(0); }
 
+/* ----------------------
+   ESTILOS ADICIONALES Y HOVER
+-------------------------*/
+.hover-zoom:hover { transform: scale(1.05); box-shadow: 0 15px 30px rgba(0,0,0,0.2); transition: all 0.4s ease; }
